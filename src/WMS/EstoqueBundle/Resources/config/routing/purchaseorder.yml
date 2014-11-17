@@ -1,0 +1,30 @@
+purchaseorder:
+    path:     /
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:index" }
+
+purchaseorder_show:
+    path:     /{id}/show
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:show" }
+
+purchaseorder_new:
+    path:     /new
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:new" }
+
+purchaseorder_create:
+    path:     /create
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:create" }
+    requirements: { _method: post }
+
+purchaseorder_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:edit" }
+
+purchaseorder_update:
+    path:     /{id}/update
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:update" }
+    requirements: { _method: post|put }
+
+purchaseorder_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WMSEstoqueBundle:PurchaseOrder:delete" }
+    requirements: { _method: post|delete }

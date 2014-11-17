@@ -1,0 +1,4 @@
+wms_estoque:
+    resource: "@WMSEstoqueBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,26 @@
+WMS\EstoqueBundle\Entity\PurchaseOrder:
+    type: entity
+    table: purchase_order
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        order_number:
+            type: integer
+            length: 10
+            unique: true
+        created_at:
+            type: datetime
+        updated_at:
+            type: datetime
+            nullable: true
+        total_cost:
+            type: decimal
+        total_discount:
+            type: decimal
+        
+    oneToMany:
+        itens:
+            targetEntity: Item
+            mappedBy: PurchaseOrder

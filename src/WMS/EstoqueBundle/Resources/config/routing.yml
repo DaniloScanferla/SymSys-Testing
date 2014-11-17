@@ -1,0 +1,11 @@
+wms_estoque_purchaseorder:
+    resource: "@WMSEstoqueBundle/Resources/config/routing/purchaseorder.yml"
+    prefix:   /purchaseorder
+
+wms_estoque_item:
+    resource: "@WMSEstoqueBundle/Resources/config/routing/item.yml"
+    prefix:   /item
+
+wms_estoque_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: WMSEstoqueBundle:Default:index }

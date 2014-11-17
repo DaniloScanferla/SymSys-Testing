@@ -1,0 +1,4 @@
+services:
+#    wms_estoque.example:
+#        class: WMS\EstoqueBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
